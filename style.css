@@ -1,25 +1,61 @@
-.error{
-    z-index: 9999999999;
-    color: #fff;
+/* Body - Oq fon */
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Error - faqat kichik ekranlar uchun */
+.error {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
     font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 9999;
 }
-.header{
+
+/* Header */
+.header {
     height: 200px;
-    width: 100%;
-    background: #000;
-    pointer-events: none;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     user-select: none;
+    pointer-events: none;
 }
-.wrap{
-    width: 100%;
+
+/* Wrap */
+.wrap {
     height: calc(100vh - 200px);
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.btn{
-    transition: .2s;
+
+/* Button */
+.btn {
+    position: absolute;
+    padding: 12px 24px;
+    border: 2px solid #000000;
+    background: transparent;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
 }
-@media (max-width: 1024.5px){
-    .error{
-        display: flex !important;
+
+/* Media Query - faqat PC uchun */
+@media (max-width: 1024.5px) {
+    .error {
+        display: flex;
     }
 }
